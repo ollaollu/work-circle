@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= render "meta/tags" %>
+  <title>TheOddCircle</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <%= yield %>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.6.1/jquery.smooth-scroll.min.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<%= form_for @tip, remote: true do |f| %>
+<div class="form-group">
+  <%= f.label :sport %>
+  <%= f.text_field :sport, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :country %>
+  <%= f.text_field :country, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :league %>
+  <%= f.text_field :league, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :teams %>
+  <%= f.text_field :teams, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :bet %>
+  <%= f.text_field :bet, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :odds %>
+  <%= f.text_field :odds, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :game_time %>
+  <%= f.time_field :game_time, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :tip_date %>
+  <%= f.date_field :tip_date, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :status %>
+  <%= f.text_field :status, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.submit 'Submit', class: "btn btn-default" %>
+</div>
+<% end %>

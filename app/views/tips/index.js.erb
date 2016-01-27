@@ -1,0 +1,7 @@
+var dashboard = $('#dashboard-view');
+
+dashboard.html('<%= escape_javascript render(partial: 'tips/forms/search_form') %>');
+dashboard.append('<%= escape_javascript render(partial: 'tips/display/table') %>');
+$('#dashboard-view div').css('padding-left', '5px');
+
+$('#frontend-tip-view').html('<%= escape_javascript render(partial: 'tips/display/table') %>');

@@ -1,0 +1,123 @@
+<section class="home-top" id="home">
+  <div class="container">
+    <%= render "flash/flash_messages" %>
+
+    <div class="row home-top-center">
+      <div class="col-sm-6 col-xs-12">
+        <div class="intro-section">
+          <h1>Welcome to Home</h1>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="intro-section-buttons">
+            <a href="#how-to" class="btn btn-primary">How To</a>
+            <a href="#pricing" class="btn btn-primary">Pricing</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs">
+        <h1>This is the heading</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-middle" id="how-to">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <h1>This is the heading</h1>
+        <p class="lead">
+          This is the body
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home-bottom" id="pricing">
+  <div class="container">
+    <div class="row home-bottom-up">
+      <div class="col-sm-12 col-xs-12 home-bottom-up-text">
+        <div class="col-xs-12 visible-xs">
+					<!-- PRICE ITEM -->
+					<div class="panel panel-default">
+						<div class="panel-heading text-center">
+						<h3>SUBSCRIPTION</h3>
+						</div>
+            <div class="panel-body text-center">
+              <p style="font-size:20px">
+                <strong>Yearly: N2000 / $10</strong>
+              </p>
+            </div>
+            <ul class="list-group text-center">
+              <li class="list-group-item"><strong>Free for first 30 days</strong></li>
+              <li class="list-group-item">Guaranteed odds of 4.0 - 7.0</li>
+              <li class="list-group-item">Tip for every Wednesday</li>
+              <li class="list-group-item">Monthly subscription N200 / $1</li>
+            </ul>
+            <div class="panel-footer">
+              <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-lg btn-block btn-primary" %>
+            </div>
+					</div>
+					<!-- /PRICE ITEM -->
+				</div>
+        <div class="col-sm-3 col-sm-offset-3 hidden-xs">
+          <!-- PRICE ITEM -->
+          <div class="panel panel-default">
+            <div class="panel-heading text-center">
+            <h3>MONTHLY</h3>
+            </div>
+            <div class="panel-body text-center">
+              <p style="font-size:20px"><strong>N300 / $1</strong></p>
+            </div>
+            <ul class="list-group text-center">
+              <li class="list-group-item"><strong>FREE FOR FIRST 30 DAYS!</strong></li>
+              <li class="list-group-item">Signup is free</li>
+              <li class="list-group-item">Well calculated tips</li>
+              <li class="list-group-item">Odds of 4.0 - 7.0</li>
+              <li class="list-group-item">Tips for every week</li>
+            </ul>
+            <div class="panel-footer">
+              <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-lg btn-block btn-primary" %>
+            </div>
+          </div>
+          <!-- /PRICE ITEM -->
+        </div>
+        <div class="col-sm-3 hidden-xs">
+          <!-- PRICE ITEM -->
+          <div class="panel panel-default best-offer">
+            <div class="panel-heading text-center">
+            <h3>YEARLY</h3>
+            </div>
+            <div class="panel-body text-center">
+              <p style="font-size:20px"><strong>N3000 / $10</strong></p>
+            </div>
+            <ul class="list-group text-center">
+              <li class="list-group-item"><strong>FREE FOR FIRST 30 DAYS!</strong></li>
+              <li class="list-group-item">Signup is free</li>
+              <li class="list-group-item">Well calculated tips</li>
+              <li class="list-group-item">Odds of 4.0 - 7.0</li>
+              <li class="list-group-item">Tips for every week</li>
+            </ul>
+            <div class="panel-footer">
+              <%= link_to "JOIN NOW", new_user_registration_path, class: "btn btn-lg btn-block btn-primary" %>
+            </div>
+          </div>
+          <!-- /PRICE ITEM -->
+        </div>
+      </div>
+    </div>
+    <div class="row home-bottom-down home-bottom-text">
+      <div class="col-sm-12 col-xs-12 home-bottom-down-text">
+        <p class="lead">
+          Sign Up Today for free!
+        </p>
+        <p>
+          <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+        </p>
+        Start receiving weekly tips.
+      </div>
+    </div>
+  </div>
+</section>

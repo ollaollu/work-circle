@@ -1,0 +1,29 @@
+<nav class="navbar navbar-default nav-dashboard" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "The Odd Circle", root_path, class: "navbar-brand" %>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Site Pages", root_path %></li>
+        <% if user_signed_in? %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown-menu">My Admin <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+            <li><p class="navbar-text"><%= current_admin.email %></p></li>
+            <li class="divider"></li>
+            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+            </ul>
+          </li>
+
+        <% else %>
+          <li><%= link_to "Admin Login", new_user_session_path %></li>
+        <% end %>
+    </ul>
+  </div>
+</nav>
